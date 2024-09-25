@@ -38,100 +38,56 @@ Diagram
 Verilog Code for Seven-Segment Display
 
 module sevensegment(seg,s);
-
 input [3:0]seg;
-
 output reg[6:0]s;
-
 always @(seg)
-
 begin
-
 case(seg)
-
 4'd0:s=7'b0111111;
-
 4'd1:s=7'b0000110;
-
 4'd2:s=7'b1011011;
-
 4'd3:s=7'b1001111;
-
 4'd4:s=7'b1100110;
-
 4'd5:s=7'b1101101;
-
 4'd6:s=7'b1111101;
-
 4'd7:s=7'b0000111;
-
 4'd8:s=7'b1111111;
-
 4'd9:s=7'b1101111;
-
 default:s=7'b0000000;
-
 endcase
-
 end
-
 endmodule
 
 Testbench for Seven-Segment Display:
 
 module sevensegment_tb;
-
 reg [3:0]seg;
-
 wire [6:0]s;
-
 sevensegment dut(seg,s);
-
 initial 
-
 begin
-
 seg=4'd0;
-
 #100
-
 seg=4'd1;
-
 #100
-
 seg=4'd2;
-
 #100
-
 seg=4'd3;
-
 #100
-
 seg=4'd4;
-
 #100
-
 seg=4'd5;
-
 #100
-
 seg=4'd6;
-
 #100
-
 seg=4'd7;
-
 #100
-
 seg=4'd8;
-
 #100
-
 seg=4'd9;
-
 end
-
 endmodule
+
 Ouput :
 ![image](https://github.com/user-attachments/assets/6f8f8393-5f90-4a0a-9b29-f8d087e7f11f)
 
