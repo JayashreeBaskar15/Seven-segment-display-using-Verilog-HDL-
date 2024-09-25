@@ -28,6 +28,8 @@ Analyze the output waveforms in the simulation window, and verify that the corre
 Save and Document Results:
 
 Capture screenshots of the waveform and save the simulation logs. These will be included in the lab report.
+![image](https://github.com/user-attachments/assets/a44b3776-7a31-406f-a96a-31c8d63dad98)
+
 
 Diagram
 ![image](https://github.com/user-attachments/assets/d7ecb419-906e-4e3b-9b82-f86ced4f364a)
